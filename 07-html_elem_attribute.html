@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBron James - Athlete Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #282828;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            width: 300px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        thead {
+            background-color: #333;
+            color: white;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #282828;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>LeBron James - Athlete Bio</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#stats">Career Stats</a>
+        <a href="#contact">Contact</a>
+        <a href="#top">Go to Top</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="bio">
+            <h2>About LeBron James</h2>
+            <img src="lebron-photo.jpg" alt="LeBron James">
+            <p>LeBron James is widely considered one of the greatest basketball players of all time. Born on December 30, 1984, in Akron, Ohio, LeBron made an immediate impact in the NBA, being drafted by the Cleveland Cavaliers straight out of high school. Over his career, he has played for the Miami Heat, the Cleveland Cavaliers, and the Los Angeles Lakers.</p>
+            <p>LeBron is known for his exceptional athleticism, basketball IQ, and leadership on the court. He has won multiple MVP awards and NBA championships throughout his career.</p>
+            <img src="lebron-action.jpg" alt="LeBron James in Action">
+        </section>
+
+        <!-- Career Stats Table -->
+        <section id="stats">
+            <h2>Career Stats (Last 3 Seasons)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>Team</th>
+                        <th>Points per Game</th>
+                        <th>Rebounds per Game</th>
+                        <th>Assists per Game</th>
+                    </tr>
+                </thead>
+                <colgroup>
+                    <col style="background-color: #f9f9f9;">
+                    <col style="background-color: #f9f9f9;">
+                    <col style="background-color: #f9f9f9;">
+                    <col style="background-color: #f9f9f9;">
+                    <col style="background-color: #f9f9f9;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>2020-2021</td>
+                        <td>Los Angeles Lakers</td>
+                        <td>25.0</td>
+                        <td>7.7</td>
+                        <td>7.8</td>
+                    </tr>
+                    <tr>
+                        <td>2021-2022</td>
+                        <td>Los Angeles Lakers</td>
+                        <td>30.3</td>
+                        <td>8.2</td>
+                        <td>6.2</td>
+                    </tr>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>Los Angeles Lakers</td>
+                        <td>28.9</td>
+                        <td>7.4</td>
+                        <td>6.8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact LeBron James</h2>
+            <form action="submit.html" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer with Navigation Links -->
+    <footer id="bottom">
+        <p>&copy; 2023 LeBron James Fan Page | <a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>
